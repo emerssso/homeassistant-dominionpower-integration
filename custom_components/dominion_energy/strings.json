@@ -1,0 +1,65 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Dominion Energy Account",
+        "description": "Enter your Dominion Energy account credentials.",
+        "data": {
+          "username": "Email",
+          "password": "Password",
+          "account_number": "Account Number"
+        },
+        "data_description": {
+          "username": "The email address you use to log into myaccount.dominionenergy.com",
+          "password": "Your Dominion Energy account password",
+          "account_number": "Your Dominion Energy account number (found on your bill)"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reauthenticate Dominion Energy",
+        "description": "Your Dominion Energy session has expired. Please re-enter your credentials.",
+        "data": {
+          "username": "Email",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to Dominion Energy. Please try again later.",
+      "invalid_auth": "Invalid credentials. Please check your email, password, and account number.",
+      "unknown": "An unexpected error occurred. Please try again."
+    },
+    "abort": {
+      "already_configured": "This account is already configured.",
+      "reauth_successful": "Reauthentication successful."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "grid_consumption": {
+        "name": "Grid Consumption"
+      },
+      "grid_return": {
+        "name": "Grid Return"
+      },
+      "monthly_usage": {
+        "name": "Monthly Usage"
+      },
+      "current_bill": {
+        "name": "Current Bill"
+      },
+      "daily_cost": {
+        "name": "Daily Cost"
+      },
+      "current_rate": {
+        "name": "Current Rate"
+      },
+      "billing_period_start": {
+        "name": "Billing Period Start"
+      },
+      "billing_period_end": {
+        "name": "Billing Period End"
+      }
+    }
+  }
+}
